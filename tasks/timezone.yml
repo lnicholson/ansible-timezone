@@ -1,5 +1,6 @@
 ---
 - name: include platform vars
+  ignore_errors: true
   include_vars: "{{ item }}"
   with_first_found:
     - "../vars/{{ ansible_distribution }}.yml"
